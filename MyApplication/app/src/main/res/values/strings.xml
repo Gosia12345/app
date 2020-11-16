@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="accxyz">acceleration x, y, z:</string>
+    <string name="magxyz">magnetometer x, y, z:</string>
+    <string name="orixyz">orientation x, y, z:</string>
+    <string name="gravxyz">gravity x, y, z:</string>
+</resources>
