@@ -4,4 +4,8 @@
     <string name="magxyz">magnetometer x, y, z:</string>
     <string name="orixyz">orientation x, y, z:</string>
     <string name="gravxyz">gravity x, y, z:</string>
+    <string name="linaccvxyz">linear acceleration x, y, z:</string>
+    <string name="stepcounter">step counter:</string>
+    <string name="azimuth">"azimuth: "</string>
+    <string name="coordinate_txt">"coordinates (x, y): "</string>
 </resources>

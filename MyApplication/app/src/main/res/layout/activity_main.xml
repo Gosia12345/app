@@ -129,7 +129,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/orientation_x"
-        app:layout_constraintStart_toEndOf="@id/wiersz_gravxyz"
+        app:layout_constraintStart_toStartOf="@+id/wiersz_gravxyz"
         tools:text="accelerator_x"/>
 
     <TextView
@@ -148,6 +148,105 @@
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/orientation_x"
         app:layout_constraintStart_toEndOf="@id/magnet_y"
+        tools:text="accelerator_x"/>
+
+    <TextView
+        android:id="@+id/wiersz_linaccvxyz"
+        android:layout_margin="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@id/gravity_y"
+        android:text="@string/linaccvxyz"/>
+
+    <TextView
+        android:id="@+id/linear_accelerator_x"
+        android:layout_margin="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/gravity_x"
+        app:layout_constraintStart_toStartOf="@id/wiersz_linaccvxyz"
+        tools:text="accelerator_x"/>
+
+    <TextView
+        android:id="@+id/linear_accelerator_y"
+        android:layout_margin="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/gravity_x"
+        app:layout_constraintStart_toEndOf="@id/orientation_x"
+        tools:text="accelerator_x"/>
+
+    <TextView
+        android:id="@+id/linear_accelerator_z"
+        android:layout_margin="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/gravity_x"
+        app:layout_constraintStart_toEndOf="@id/orientation_y"
+        tools:text="accelerator_x"/>
+
+    <TextView
+        android:id="@+id/stepcounter"
+        android:layout_margin="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@id/linear_accelerator_y"
+        android:text="@string/stepcounter"/>
+
+    <TextView
+        android:id="@+id/step_counter"
+        android:layout_margin="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/linear_accelerator_x"
+        app:layout_constraintStart_toEndOf="@id/stepcounter"
+        tools:text="accelerator_x"/>
+
+    <TextView
+        android:id="@+id/azimuth_txt"
+        android:layout_margin="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@id/step_counter"
+        android:text="@string/azimuth"/>
+
+    <TextView
+        android:id="@+id/azimuth"
+        android:layout_margin="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/step_counter"
+        app:layout_constraintStart_toEndOf="@id/azimuth_txt"
+        tools:text="accelerator_x"/>
+
+    <TextView
+        android:id="@+id/coordinate_txt"
+        android:layout_margin="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@id/azimuth"
+        android:text="@string/coordinate_txt"/>
+
+    <TextView
+        android:id="@+id/coordinate_X"
+        android:layout_margin="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/coordinate_txt"
+        app:layout_constraintStart_toEndOf="@id/coordinate_txt"
+        tools:text="accelerator_x"/>
+
+    <TextView
+        android:id="@+id/coordinate_Y"
+        android:layout_margin="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/coordinate_X"
+        app:layout_constraintStart_toEndOf="@id/coordinate_txt"
         tools:text="accelerator_x"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
